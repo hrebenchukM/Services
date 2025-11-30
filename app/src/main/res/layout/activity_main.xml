@@ -21,4 +21,23 @@
         android:onClick="stopImageService"
         android:text="Зупинити сервіс!"
         android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#FF8833"
+        android:onClick="startMonitor"
+        android:text="Старт моніторингу!"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#FF3333"
+        android:onClick="stopMonitor"
+        android:text="Стоп моніторингу!"
+        android:textAllCaps="false" />
+
 </LinearLayout>

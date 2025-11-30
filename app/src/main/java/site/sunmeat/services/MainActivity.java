@@ -64,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
         showToast("сервіс зупинено");
     }
 
+
+    public void startMonitor(View v) {
+        startService(new Intent(MainActivity.this, AppMonitorService.class));
+    }
+
+    public void stopMonitor(View v) {
+        stopService(new Intent(MainActivity.this, AppMonitorService.class));
+    }
+
     // перевірка, чи запущено сервіс
     private boolean isServiceRunning(Class<?> serviceClass) {
         ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
